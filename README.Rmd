@@ -1,0 +1,47 @@
+---
+title: "README"
+author: "Monica Impaglia"
+date: '2022-03-21'
+output: github_document
+---  
+
+
+
+```{r}
+args(read.csv)  
+read.csv(file = "C:\\Users\\Home\\OneDrive\\Desktop\\pa_2\\data\\data.csv") 
+my_data <- read.csv("C:\\Users\\Home\\OneDrive\\Desktop\\pa_2\\data\\data.csv")  
+
+```
+
+```{r}
+mean(my_data$durationV)
+```
+```{r}
+mean(my_data$f0)
+```
+```{r}
+mean(my_data$int)
+```
+
+```{r}
+  ggplot(data = my_data, aes(x = info, y = durationV)) + 
+    geom_point() 
+```
+
+```{r}
+  ggplot(data = my_data, aes(x = info, y = f0)) + 
+    geom_point()
+
+```
+
+
+```{r}
+  ggplot(data = my_data, aes(x = f0, y = int, color = info)) +
+    geom_point()
+  
+```
+
+
+
+

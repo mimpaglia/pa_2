@@ -1,0 +1,15 @@
+---
+title: "README"
+author: "Monica Impaglia"
+date: '2022-03-21'
+output: github_document
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+gfg=read.csv ('data.csv')
+result<- mean (gfg$V1)  
+print (result)  
+
